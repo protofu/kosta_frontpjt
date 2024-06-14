@@ -3,6 +3,11 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
 .container {
     width: 800px;
     height: 100%;
@@ -54,9 +59,9 @@ main>.main-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
 
-main>div a {
+.main-box a {
     text-decoration-line: none;
     color: black;
     text-align: center;

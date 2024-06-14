@@ -1,4 +1,4 @@
-#ask {
+#using {
     font-size: 350%;
 }
 
@@ -10,7 +10,7 @@ div>h1 {
     padding: 100px 0;
 }
 
-div #yes {
+div #return {
     border: 1px solid black;
     font-size: 300%;
     display: inline;
@@ -19,14 +19,6 @@ div #yes {
     color: black;
 }
 
-div #no {
-    border: 1px solid black;
-    font-size: 300%;
-    display: inline;
-    margin: 20px;
-    padding: 30px 50px;
-    color: black;
-}
 
 a {
     text-decoration: none;

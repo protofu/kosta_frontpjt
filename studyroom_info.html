@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌석 선택</title>
+    <!-- css 파일 -->
+    <link rel="stylesheet" href="./style/layout.css">
+    <!-- 현재 날짜 시간 -->
+    <script>
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formattedDate = `${year}-${month}-${date}`;
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentDateTime').innerText = `${formattedDate} ${formattedTime}`;
+        }
+
+        // 매초마다 displayCurrentDateTime 함수를 실행하여 날짜와 시간을 업데이트
+        setInterval(displayCurrentDateTime, 1000);
+    </script>
+    <!-- font 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel= "stylesheet" href="/style/studyroom_info.css">
+</head>
+
+<body>
+    <div class="container ff-noto-sans">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="logo-box">
+                <h1>Kosta logo</h1>
+            </div>
+            <div>
+                <h1><span id="currentDateTime" class="ff-noto-sans"></span></h1>
+            </div>
+        </header>
+
+        <!-- 메인 부분 -->
+        <main>
+            <div>
+                <h3 id="title">내 좌석 정보<br><hr></h3>
+                <h3>이름 : 김XX<br></h3>
+                <h3>좌석 번호 : [ 6 ] 번<br></h3>
+                <h3>예약 시간 : 24.06.14 16:37<br></h3>
+                <h3>마감 시간 : 24.06.14 20:37<br><br><hr></h3>
+                <br><br><br><br>
+                <a href="/studyroom_main.html">
+                    <h2 id="return">돌아가기</h2>
+                </a>
+            </div>
+
+
+        </main>
+
+        <!-- 푸터 부분 -->
+        <footer>
+            <div>
+                a
+            </div>
+            <div>
+                <a href="layout.html">
+                    <img class="home-btn" src="./image/home.svg" alt="home">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/undo.svg" alt="home">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    height: 100%;
+}
+
+.login-box {
+    border: 1px solid rgba(0, 0, 0, .12);
+    padding: 0, 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    height: 530px;
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-text>input {
+    padding: 12px 0 8px;
+    width: 440px;
+    height: 30px;
+    border-width: 0 0 1px;
+    font-size: 18px;
+    outline: 0 none;
+}
+
+.login-btn {
+    margin-top: 30px;
+    /* border: black 1px solid; */
+    border-radius: 10px;
+    width: 440px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #FEE500;
+}
+
+
+.line_or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 440px;
+    margin: 15px 0;
+}
+
+.line_or::before,
+.line_or::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, .12);;
+    margin: 0 10px;
+}
+
+.txt_or {
+    white-space: nowrap;
+    color: #828282;
+}
+
+.QR-login-btn {
+    background-color: #F0F0F0;
+    /* border: black 1px solid; */
+    border-radius: 10px;
+    width: 440px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.under-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* border: black 1px solid; */
+    width: 440px;
+    margin-top: 20px;
+}
+
+.under-login div {
+    color: #191919;
+    font-size: 12px;
+}
+
+.under-login .sign-up {
+    width: 100px;
+    flex: 1;
+}
+
+.under-login .ac-find {
+    width: auto;
+    text-align: right;
+    flex: 1;
+}
+
+
+/* semi-footer */
+
+.semi-footer {
+    height: 100px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-font {
+    font-weight: bold;
+}
+
+.semi-footer div {
+    margin: 0 5px;
+}
+
+.last-footer {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 파일 -->
+    
+    <link rel="stylesheet" href="./style/book_search.css">
+    <!-- 현재 날짜 시간 -->
+    <script>
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formattedDate = `${year}-${month}-${date}`;
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentDateTime').innerText = `${formattedDate} ${formattedTime}`;
+        }
+
+        // 매초마다 displayCurrentDateTime 함수를 실행하여 날짜와 시간을 업데이트
+        setInterval(displayCurrentDateTime, 1000);
+    </script>
+    <!-- font 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container ff-noto-sans">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="logo-box">
+                <h1>Kosta logo</h1>
+            </div>
+            <div>
+                <h1><span id="currentDateTime" class="ff-noto-sans"></span></h1>
+            </div>
+        </header>
+
+        <!-- 메인 부분 -->
+        <main>
+            <div id="search_wrap">
+                <div id="search_box">
+                    <input type="text" value="해리포터">
+                    <a href="#" id="search_icon">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </a>
+                </div>
+                <div id="search_table">
+                    <div class="book_entry">
+                        <img class="book_cover" src="book_image/book04.jpg" alt="책1">
+                        <div class="book_info">
+                            <h4 class="book_title"><span class="search_word">해리포터</span>와 불의 잔 3권</h4>
+                            <div>
+                                <span class="book_author">저자 : Rowling, J.K 지음; 김혜원 옮김.</span>
+                                <span class="book_publisher">출판사 : 문학수첩 (2000)</span>
+                            </div>
+                            <p class="book_code">청구기호 : 843.5-20-213-3</p>
+                            <p class="book_locate">소장위치 : <span>일반자료실2(2층)</span></p>
+                        </div>
+                        <div class="book_mola">
+
+                        </div>
+                    </div>
+                    <div class="book_entry">
+                        <img class="book_cover" src="book_image/book04.jpg" alt="책1">
+                        <div class="book_info">
+                            <h4 class="book_title"><span class="search_word">해리포터</span>와 불의 잔 4권</h4>
+                            <div>
+                                <span class="book_author">저자 : Rowling, J.K 지음; 김혜원 옮김.</span>
+                                <span class="book_publisher">출판사 : 문학수첩 (2000)</span>
+                            </div>
+                            <p class="book_code">청구기호 : 843.5-20-213-4</p>
+                            <p class="book_locate">소장위치 : <span>일반자료실2(2층)</span></p>
+                        </div>
+                        <div class="book_mola">
+
+                        </div>
+                    </div>
+                    <div class="book_entry">
+                        <img class="book_cover" src="book_image/book06.jpg" alt="책1">
+                        <div class="book_info">
+                            <h4 class="book_title"><span class="search_word">해리포터</span>와 혼혈 왕자 1권</h4>
+                            <div>
+                                <span class="book_author">저자 : Rowling, J.K 지음; 최인자 옮김.</span>
+                                <span class="book_publisher">출판사 : 문학수첩 (2005)</span>
+                            </div>
+                            <p class="book_code">청구기호 : 843.5-15-407-1</p>
+                            <p class="book_locate">소장위치 : <span>일반자료실2(2층)</span></p>
+                        </div>
+                        <div class="book_mola">
+
+                        </div>
+                    </div>
+                    <div class="book_entry">
+                        <img class="book_cover" src="book_image/book06.jpg" alt="책1">
+                        <div class="book_info">
+                            <h4 class="book_title"><span class="search_word">해리포터</span>와 혼혈 왕자 2권</h4>
+                            <div>
+                                <span class="book_author">저자 : Rowling, J.K 지음; 최인자 옮김.</span>
+                                <span class="book_publisher">출판사 : 문학수첩 (2005)</span>
+                            </div>
+                            <p class="book_code">청구기호 : 843.5-15-407-2</p>
+                            <p class="book_locate">소장위치 : <span>일반자료실2(2층)</span></p>
+                        </div>
+                        <div class="book_mola">
+
+                        </div>
+                    </div>
+                    <div class="book_entry">
+                        <img class="book_cover" src="book_image/book06.jpg" alt="책1">
+                        <div class="book_info">
+                            <h4 class="book_title"><span class="search_word">해리포터</span>와 혼혈 왕자 3권</h4>
+                            <div>
+                                <span class="book_author">저자 : Rowling, J.K 지음; 최인자 옮김.</span>
+                                <span class="book_publisher">출판사 : 문학수첩 (2005)</span>
+                            </div>
+                            <p class="book_code">청구기호 : 843.5-15-407-3</p>
+                            <p class="book_locate">소장위치 : <span>일반자료실2(2층)</span></p>
+                        </div>
+                        <div class="book_mola">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="search_page">
+                    <a href="#" class="page_sign">
+                        <span class="material-symbols-outlined" style="font-size: 40px;">
+                            arrow_back
+                        </span>
+                    </a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#" id="current_page">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" id="disabled_page">…</a></li>
+                        <li><a href="#">7</a></li>
+                    </ul>
+                    <a href="#" class="page_sign">
+                        <span class="material-symbols-outlined" style="font-size: 40px;">
+                            arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+
+            
+        </main>
+
+        <!-- 푸터 부분 -->
+        <footer>
+            <div>
+                
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/home.svg" alt="home">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/undo.svg" alt="home">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

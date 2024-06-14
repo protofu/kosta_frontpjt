@@ -1,0 +1,30 @@
+#ask {
+    font-size: 350%;
+}
+
+div {
+    text-align: center;
+}
+
+div>h1 {
+    padding: 100px 0;
+}
+
+div #yes {
+    border: 1px solid black;
+    font-size: 300%;
+    display: inline;
+    margin: 20px;
+    padding: 30px 100px;
+}
+
+div #no {
+    border: 1px solid black;
+    font-size: 300%;
+    display: inline;
+    margin: 20px;
+    padding: 30px 50px;
+
+}
+
+

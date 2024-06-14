@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌석 선택</title>
+    <!-- css 파일 -->
+    <link rel="stylesheet" href="./style/layout.css">
+    <!-- 현재 날짜 시간 -->
+    <script>
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formattedDate = `${year}-${month}-${date}`;
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentDateTime').innerText = `${formattedDate} ${formattedTime}`;
+        }
+
+        // 매초마다 displayCurrentDateTime 함수를 실행하여 날짜와 시간을 업데이트
+        setInterval(displayCurrentDateTime, 1000);
+    </script>
+    <!-- font 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/studyroom.css">
+</head>
+
+<body>
+    <div class="container ff-noto-sans">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="logo-box">
+                <h1>Kosta logo</h1>
+            </div>
+            <div>
+                <h1><span id="currentDateTime" class="ff-noto-sans"></span></h1>
+            </div>
+        </header>
+
+        <!-- 메인 부분 -->
+        <main>
+            <div class="content1">
+                <span>
+                    <h4 id="공백"></h4>
+                    <h4 id="사용가능"></h4>
+                    <h5>사용가능</h5>
+                </span>
+                <ul id="left_ul">
+                    <li class="using">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li>5</li>
+                    <li class="using">6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="using">13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li class="using">16</li>
+                    <li class="using">17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                </ul>
+            </div>
+                
+            <div class="content2">
+                <span>
+                    <h4 id="사용중"></h4>
+                    <h5>사용중</h5>
+                </span>
+                <ul id="center_ul">
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li id="left_door">입</li>
+                    <li id="right_door">구</li>
+                    <li class="x"></li>
+
+                </ul>
+            </div>
+
+            <div class="content3">
+                <span>
+                    <h4 id="사용불가"></h4>
+                    <h5>사용불가</h5>
+                </span>
+                <ul id="right_ul">
+                    <li>31</li>
+                    <li>32</li>
+                    <li class="using">33</li>
+                    <li class="using">34</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li>35</li>
+                    <li>36</li>
+                    <li>37</li>
+                    <li>38</li>
+                    <li>39</li>
+                    <li class="using">40</li>
+                    <li>41</li>
+                    <li class="using">42</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="break">43</li>
+                    <li class="break">44</li>
+                    <li class="break">45</li>
+                    <li class="break">46</li>
+                    <li>47</li>
+                    <li class="using">48</li>
+                    <li>49</li>
+                    <li>50</li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                    <li class="x"></li>
+                </ul>
+            </div>
+
+
+        </main>
+
+        <!-- 푸터 부분 -->
+        <footer>
+            <div>
+                a
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/home.svg" alt="home">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/undo.svg" alt="home">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

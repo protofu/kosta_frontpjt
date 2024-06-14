@@ -1,0 +1,168 @@
+#studyroom_container {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.noto-sans {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+header{
+    text-align: center;
+    background-color: #A7E6FF;
+}
+footer {
+    text-align: center;
+    /* background-color: #3572EF; */
+}
+main {
+    /* background-color: #A7E6FF; */
+    display: flex;
+    width: 800px;
+}
+
+.content1, .content2, .content3 {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left_ul li {
+    /* float: right; */
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    text-align: center;
+    flex: auto;
+}
+#center_ul li {
+    /* float: left; */
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    text-align: center;
+    flex: auto;
+
+}
+#right_ul li {
+    /* float: left; */
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    text-align: center;
+    flex: auto;
+}
+
+span>h4 {
+    position: absolute;
+    margin-left: 75px;
+}
+span>h5 {
+    font-size: 100%;
+    text-indent: 120px;
+}
+#공백 {
+    background-color: rgba(0, 0, 0, 0);
+}
+#사용가능 {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+}
+#사용중 {
+    background-color: orangered;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+#사용불가 {
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.use {
+    text-align: center;
+    width: 100px;
+    line-height: 100px;
+    background-color: #A7E6FF
+}
+
+/* 미사용(투명) */
+#left_ul>.x {
+    background-color: rgba(0, 0, 0, 0);
+}
+#center_ul>.x {
+    background-color: rgba(0, 0, 0, 0);
+}
+#right_ul>.x {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* 사용중 */
+#left_ul>.using {
+    background-color: orangered;
+}
+#center_ul>.using {
+    background-color: orangered;
+}
+#right_ul>.using {
+    background-color: orangered;
+}
+
+/* 사용불가 */
+#left_ul>.break {
+    background-color: yellow;
+}
+#center_ul>.break {
+    background-color: yellow;
+}
+#right_ul>.break {
+    background-color: yellow;
+}
+
+/* 입출구 */
+.content2 #left_door {
+    background-color: #3572EF;
+    border-radius: 0 0 100% 0;
+}
+.content2 #right_door {
+    background-color: #3572EF;
+    border-radius: 0 0 0 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

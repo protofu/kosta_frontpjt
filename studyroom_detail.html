@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>좌석 선택</title>
     <!-- css 파일 -->
     <link rel="stylesheet" href="./style/layout.css">
     <!-- 현재 날짜 시간 -->
@@ -31,6 +31,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel= "stylesheet" href="/style/studyroom_yes_or_no.css">
 </head>
 
 <body>
@@ -47,30 +49,17 @@
 
         <!-- 메인 부분 -->
         <main>
-            <div class="main-box">
-                <a href="./book.html">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>book</div>
+            <div>
+                <h1 id="ask">해당 좌석을 사용하시겠습니까?</h1>
+                <a href="/studyroom_main.html">
+                    <h2 id="no">아니오</h2>
                 </a>
-            </div>
-            <div class="main-box">
                 <a href="#">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>search</div>
+                <h2 id="yes">네</h2>
                 </a>
             </div>
-            <div class="main-box">
-                <a href="#">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>Seat</div>
-                </a>
-            </div>
+
+
         </main>
 
         <!-- 푸터 부분 -->
@@ -79,7 +68,7 @@
                 a
             </div>
             <div>
-                <a href="./layout.html">
+                <a href="#">
                     <img class="home-btn" src="./image/home.svg" alt="home">
                 </a>
             </div>

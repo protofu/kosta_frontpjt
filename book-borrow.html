@@ -31,6 +31,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- css 추가 파일 -->
+    <link rel="stylesheet" href="./style/book-borrow.css">
 </head>
 
 <body>
@@ -47,29 +50,16 @@
 
         <!-- 메인 부분 -->
         <main>
-            <div class="main-box">
-                <a href="./book.html">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>book</div>
-                </a>
-            </div>
-            <div class="main-box">
-                <a href="#">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>search</div>
-                </a>
-            </div>
-            <div class="main-box">
-                <a href="#">
-                    <div>
-                        <img class="menu-img" src="./image/book.png" alt="book" >
-                    </div>
-                    <div>Seat</div>
-                </a>
+            <div class="borrow-main">
+                <div>
+                    <img class="qr-img" src="./image/qr.jpg" alt="qr">
+                </div>
+                <div>
+                    <h3>도서의 QR 코드를 인식해 주세요</h3>
+                </div>
+                <div>
+                    <a href="./book-borrow-detail.html">다음(임시)</a>
+                </div>
             </div>
         </main>
 
@@ -79,7 +69,7 @@
                 a
             </div>
             <div>
-                <a href="./layout.html">
+                <a href="layout.html">
                     <img class="home-btn" src="./image/home.svg" alt="home">
                 </a>
             </div>

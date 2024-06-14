@@ -40,12 +40,12 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 
 
 }
 
-main>div {
+main>.main-box {
     width: 200px;
     height: 200px;
     border: black 1px solid;
@@ -54,7 +54,7 @@ main>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 main>div a {
     text-decoration-line: none;
@@ -88,6 +88,7 @@ footer div a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 

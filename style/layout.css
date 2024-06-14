@@ -45,7 +45,7 @@ main {
 
 }
 
-/* main>div {
+main>.main-box {
     width: 200px;
     height: 200px;
     border: black 1px solid;
@@ -88,6 +88,7 @@ footer div a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 

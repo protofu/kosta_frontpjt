@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 파일 -->
+    <link rel="stylesheet" href="./style/layout.css">
+    <!-- 현재 날짜 시간 -->
+    <script>
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formattedDate = `${year}-${month}-${date}`;
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentDateTime').innerText = `${formattedDate} ${formattedTime}`;
+        }
+
+        // 매초마다 displayCurrentDateTime 함수를 실행하여 날짜와 시간을 업데이트
+        setInterval(displayCurrentDateTime, 1000);
+    </script>
+    <!-- font 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- css 추가 파일 -->
+    <link rel="stylesheet" href="./style/book-borrow-detail.css">
+</head>
+
+<body>
+    <div class="container ff-noto-sans">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="logo-box">
+                <h1>Kosta logo</h1>
+            </div>
+            <div>
+                <h1><span id="currentDateTime" class="ff-noto-sans"></span></h1>
+            </div>
+        </header>
+
+        <!-- 메인 부분 -->
+        <main>
+            <div class="container-borrow-detail-small">
+                <div class="book-imgbox">
+                    <img class="book-img" src="book_image/book04.jpg" alt="html-book" style="width: 200px;">
+                    <div class="book-title">
+                        <h3>해리포터와 불의 잔 3권</h3>
+                    </div>
+                    <div>
+                        <img class="location-map" src="./image/book-location.gif" alt="book-location"> </p>
+                    </div>
+                </div>
+                <div class="book-detail">
+                    <div>
+                        <h3>[문학] 해리포터와 불의 잔 3권</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <p> | Rowling, J.K 지음; 김혜원 옮김. | 문학수첩 | 2000 |</p>
+                    </div>
+                    <hr>
+                    <div class="book-ex">
+                        <h4 class="small-title">위치</h4>
+                        <p>[지하1층 D0-30] 평대</p>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="book-ex" style="opacity: 0;">
+                        <h4 class="small-title">예약가능</h4>
+                        <p>5 부(*재고는 실시간으로 변경)</p>
+                    </div>
+                    <div class="book-ex-lo" style="opacity: 0;">
+                        <div class="select-day">
+                            <div class="select-day-detail">
+                                <label>
+                                    <input type="checkbox" class="hidden-checkbox" id="day-btn">
+                                    <span class="button">3일</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="hidden-checkbox" id="day-btn">
+                                    <span class="button">5일</span>
+                                </label>
+                            </div>
+                            <div class="select-day-detail">
+                                <label>
+                                    <input type="checkbox" class="hidden-checkbox" id="day-btn">
+                                    <span class="button">1주</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="hidden-checkbox" id="day-btn">
+                                    <span class="button">2주</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="print-box">
+                            <a class="print-btn" href="./book-borrow-fin.html">대여하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 푸터 부분 -->
+        <footer>
+            <div>
+                a
+            </div>
+            <div>
+                <a href="layout.html">
+                    <img class="home-btn" src="./image/home.svg" alt="home">
+                </a>
+            </div>
+            <div>
+                <a href="book_search.html">
+                    <img class="home-btn" src="./image/undo.svg" alt="home">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

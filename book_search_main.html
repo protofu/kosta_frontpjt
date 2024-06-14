@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 파일 -->
+    
+    <link rel="stylesheet" href="./style/book_search_main.css">
+    <!-- 현재 날짜 시간 -->
+    <script>
+        function displayCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const formattedDate = `${year}-${month}-${date}`;
+            const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('currentDateTime').innerText = `${formattedDate} ${formattedTime}`;
+        }
+
+        // 매초마다 displayCurrentDateTime 함수를 실행하여 날짜와 시간을 업데이트
+        setInterval(displayCurrentDateTime, 1000);
+    </script>
+    <!-- font 스타일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container ff-noto-sans">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="logo-box">
+                <h1>Kosta logo</h1>
+            </div>
+            <div>
+                <h1><span id="currentDateTime" class="ff-noto-sans"></span></h1>
+            </div>
+        </header>
+
+        <!-- 메인 부분 -->
+        <main>
+            <div id="search_wrap">
+                <div id="search_intro">
+
+                </div>
+                <div id="search_box">
+                    <a id="search_condition">
+                        <span>전체</span>
+                        <span class="material-symbols-outlined" id="condition_arrow">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <input type="text" value="해리포터">
+                    <a href="book_search.html" id="search_icon">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </a>
+                </div>
+                <div id="search_keyboard">
+                    <ul>
+                        <li><a href="#">ㅂ</a></li>
+                        <li><a href="#">ㅈ</a></li>
+                        <li><a href="#">ㄷ</a></li>
+                        <li><a href="#">ㄱ</a></li>
+                        <li><a href="#">ㅅ</a></li>
+                        <li><a href="#">ㅛ</a></li>
+                        <li><a href="#">ㅕ</a></li>
+                        <li><a href="#">ㅑ</a></li>
+                        <li><a href="#">ㅐ</a></li>
+                        <li><a href="#">ㅔ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">ㅁ</a></li>
+                        <li><a href="#">ㄴ</a></li>
+                        <li><a href="#">ㅇ</a></li>
+                        <li><a href="#">ㄹ</a></li>
+                        <li><a href="#">ㅎ</a></li>
+                        <li><a href="#">ㅗ</a></li>
+                        <li><a href="#">ㅓ</a></li>
+                        <li><a href="#">ㅏ</a></li>
+                        <li><a href="#">ㅣ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" style="width: 80px;" class="keyboard_icon">
+                            <span class="material-symbols-outlined" style="font-size: 45px;">shift</span>
+                        </a></li>
+                        <li><a href="#">ㅋ</a></li>
+                        <li><a href="#">ㅌ</a></li>
+                        <li><a href="#">ㅊ</a></li>
+                        <li><a href="#">ㅍ</a></li>
+                        <li><a href="#">ㅠ</a></li>
+                        <li><a href="#">ㅜ</a></li>
+                        <li><a href="#">ㅡ</a></li>
+                        <li><a href="#" style="width: 80px;" class="keyboard_icon">
+                            <span class="material-symbols-outlined" style="font-size: 45px;">backspace</span>
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" style="width: 100px; font-size: 32px;">123</a></li>
+                        <li><a href="#" style="width: 150px; font-size: 32px;">한/영</a></li>
+                        <li><a href="#" style="width: 300px;" class="keyboard_icon">
+                            <span class="material-symbols-outlined" style="font-size: 45px;">space_bar</span>
+                        </a></li>
+                        <li><a href="#" style="width: 100px;" class="keyboard_icon">
+                            <span class="material-symbols-outlined" style="font-size: 45px;">subdirectory_arrow_left</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            
+        </main>
+
+        <!-- 푸터 부분 -->
+        <footer>
+            <div>
+                
+            </div>
+            <div>
+                <a href="layout.html">
+                    <img class="home-btn" src="./image/home.svg" alt="home">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="home-btn" src="./image/undo.svg" alt="home">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

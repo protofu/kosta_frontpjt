@@ -52,6 +52,15 @@ main {
     margin: 0 auto;  
 }
 
+/* 검색해 주세요 css*/
+
+#search_intro {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #fff;
+}
+
 /* 검색 상자 css */
 
 #search_box {
@@ -107,7 +116,7 @@ main {
 /* 검색 키보드 css */
 #search_keyboard {
     width: 720px;
-    margin: 80px auto;
+    margin: 30px auto;
     background-color: #aaa;
 }
 

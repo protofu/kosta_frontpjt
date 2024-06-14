@@ -1,0 +1,26 @@
+#title {
+    font-size: 200%;
+}
+
+
+div {
+    text-align: center;
+}
+
+div>h1 {
+    padding: 100px 0;
+}
+
+div #return {
+    border: 1px solid black;
+    font-size: 300%;
+    display: inline;
+    padding: 30px 100px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+

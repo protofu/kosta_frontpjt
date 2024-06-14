@@ -105,55 +105,36 @@ main {
     font-size: 32px;
 }
 
-/* 검색 테이블 css */
-
-#search_table {
-    font-size: 14px;
-    width: 90%;
+/* 검색 키보드 css */
+#search_keyboard {
+    width: 720px;
+    height: 510px;
     margin: 0 auto;
+    background-color: #aaa;
 }
-.book_entry {
-    cursor: pointer;
+
+#search_keyboard ul {
     display: flex;
-    height: 90px;
-    margin: 15px auto;
-}
-.book_cover {
-    width: 75px;
-    height: 90px;
-    -webkit-user-drag: none;
-}
-.book_info {
-    width: 525px;
-    height: 100%;
-    padding-left: 20px;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.book_info * {
-    margin: 0;
     padding: 0;
 }
-.book_author {
-    margin-right: 10px;
-}
-.book_author::after {
-    content: " | ";
-}
-.book_locate span {
-    font-weight: bold;
+
+#search_keyboard li {
+    list-style: none;
 }
 
-.book_mola {
-    width: 120px;
-    height: 90px;
+#search_keyboard a {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin-right: 5px;
+
     background-color: #fff;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 45px;
+    line-height: calc(65px*0.9);
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
 }
 
 /* 검색 페이지 css */

@@ -45,6 +45,7 @@ ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 #left_ul li {
@@ -125,12 +126,13 @@ span>h5 {
 }
 
 /* 사용중 */
-#left_ul>.using {
+#left_ul>.using, #left_ul>a>.using {
     background-color: orangered;
 }
 #center_ul>.using {
     background-color: orangered;
 }
+
 #right_ul>.using {
     background-color: orangered;
 }
@@ -142,8 +144,14 @@ span>h5 {
 #center_ul>.break {
     background-color: yellow;
 }
-#right_ul>.break {
+#right_ul>.break, #right_ul>a>.break {
     background-color: yellow;
+}
+
+/* 좌석 링크 text */
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* 입출구 */

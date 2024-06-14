@@ -1,0 +1,137 @@
+.container-borrow-detail-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-borrow-detail-small {
+    /* border: black 1px solid; */
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-borrow-detail>div {
+    /* border: black 1px solid; */
+
+}
+
+.book-imgbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.book-img {}
+
+.book-detail {}
+
+.book-ex {
+    display: flex;
+    align-items: center;
+}
+
+.book-ex-lo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-ex>.small-title {
+    margin-right: 10px;
+}
+
+.location-map {
+    width: 200px;
+    height: auto;
+    flex: 1;
+}
+
+.print-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.print-btn {
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.select-day {
+    /* border: black 1px solid; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.select-day-detail {
+    /* border: black 1px solid; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.select-day-detail div {
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.day-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.days {
+    width: 50px;
+    border: black 1px solid;
+}
+
+
+/* 기간 버튼 부분 */
+.hidden-checkbox {
+    display: none;
+}
+
+/* 기본 버튼 스타일 */
+.button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* 체크박스가 체크되었을 때의 스타일 */
+.hidden-checkbox:checked + .button {
+    background-color: green;
+}

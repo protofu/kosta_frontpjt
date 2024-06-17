@@ -163,6 +163,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.book_no {
+    color: red;
 }
 
 /* 검색 페이지 css */

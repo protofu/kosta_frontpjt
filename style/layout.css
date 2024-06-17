@@ -30,11 +30,19 @@ header {
 
 .logo-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
     width: 100px;
     height: 100px;
+}
+
+.logo-img {
+    width: 90px;
+    height: 60px;
+    margin-right: 10px;
 }
 
 /* 메인 부분 css */

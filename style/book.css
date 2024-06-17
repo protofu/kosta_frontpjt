@@ -1,0 +1,14 @@
+.borrow-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid #2980b9;
+    text-align: center;
+    line-height: 150px;
+    font-size: 32px;
+    /* font-family: bold; */
+}
